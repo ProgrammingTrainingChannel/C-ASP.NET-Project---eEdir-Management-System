@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="eEdirManagementSystemDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblMember">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Fullname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RegionID" Type="int" Nullable="false" />
+    <Property Name="SubcityID" Type="int" Nullable="false" />
+    <Property Name="WoredaID" Type="int" Nullable="false" />
+    <Property Name="HouseNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EmailAddress" Type="nvarchar" MaxLength="50" />
+    <Property Name="MembershipDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblMemberFamily">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MemberID" Type="int" Nullable="false" />
+    <Property Name="Fullname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RegionID" Type="int" Nullable="false" />
+    <Property Name="SubcityID" Type="int" />
+    <Property Name="WoredaID" Type="int" />
+    <Property Name="HouseNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="RelationTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblMemberNotification">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MemberID" Type="int" Nullable="false" />
+    <Property Name="NotificationTypeID" Type="int" Nullable="false" />
+    <Property Name="Message" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="NotificationDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblMemberPayment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MemberID" Type="int" Nullable="false" />
+    <Property Name="PaymentPeriodID" Type="int" Nullable="false" />
+    <Property Name="PaymentYear" Type="int" Nullable="false" />
+    <Property Name="PaymentDate" Type="date" Nullable="false" />
+    <Property Name="PaymentAmount" Type="money" Nullable="false" />
+    <Property Name="PaymentTransactionCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblNotificationType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblPaymentPeriod">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblRegion">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblRelationType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblSubcity">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RegionID" Type="int" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblWoreda">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SubcityID" Type="int" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_tblMember_tblRegion">
+    <End Role="tblRegion" Type="Self.tblRegion" Multiplicity="1" />
+    <End Role="tblMember" Type="Self.tblMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblRegion">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblMember">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblMember_tblSubcity">
+    <End Role="tblSubcity" Type="Self.tblSubcity" Multiplicity="1" />
+    <End Role="tblMember" Type="Self.tblMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSubcity">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblMember">
+        <PropertyRef Name="SubcityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblMember_tblWoreda">
+    <End Role="tblWoreda" Type="Self.tblWoreda" Multiplicity="1" />
+    <End Role="tblMember" Type="Self.tblMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblWoreda">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblMember">
+        <PropertyRef Name="WoredaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblMemberFamily_tblMember">
+    <End Role="tblMember" Type="Self.tblMember" Multiplicity="1" />
+    <End Role="tblMemberFamily" Type="Self.tblMemberFamily" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMember">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblMemberFamily">
+        <PropertyRef Name="MemberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblMemberFamily_tblRegion">
+    <End Role="tblRegion" Type="Self.tblRegion" Multiplicity="1" />
+    <End Role="tblMemberFamily" Type="Self.tblMemberFamily" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblRegion">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblMemberFamily">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblMemberFamily_tblRelationType">
+    <End Role="tblRelationType" Type="Self.tblRelationType" Multiplicity="1" />
+    <End Role="tblMemberFamily" Type="Self.tblMemberFamily" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblRelationType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblMemberFamily">
+        <PropertyRef Name="RelationTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblMemberFamily_tblSubcity">
+    <End Role="tblSubcity" Type="Self.tblSubcity" Multiplicity="0..1" />
+    <End Role="tblMemberFamily" Type="Self.tblMemberFamily" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSubcity">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblMemberFamily">
+        <PropertyRef Name="SubcityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblMemberFamily_tblWoreda">
+    <End Role="tblWoreda" Type="Self.tblWoreda" Multiplicity="0..1" />
+    <End Role="tblMemberFamily" Type="Self.tblMemberFamily" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblWoreda">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblMemberFamily">
+        <PropertyRef Name="WoredaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblMemberNotification_tblMember">
+    <End Role="tblMember" Type="Self.tblMember" Multiplicity="1" />
+    <End Role="tblMemberNotification" Type="Self.tblMemberNotification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMember">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblMemberNotification">
+        <PropertyRef Name="MemberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblMemberPayment_tblMember">
+    <End Role="tblMember" Type="Self.tblMember" Multiplicity="1" />
+    <End Role="tblMemberPayment" Type="Self.tblMemberPayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblMember">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblMemberPayment">
+        <PropertyRef Name="MemberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblMemberPayment_tblPaymentPeriod">
+    <End Role="tblPaymentPeriod" Type="Self.tblPaymentPeriod" Multiplicity="1" />
+    <End Role="tblMemberPayment" Type="Self.tblMemberPayment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblPaymentPeriod">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblMemberPayment">
+        <PropertyRef Name="PaymentPeriodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblSubcity_tblRegion">
+    <End Role="tblRegion" Type="Self.tblRegion" Multiplicity="1" />
+    <End Role="tblSubcity" Type="Self.tblSubcity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblRegion">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblSubcity">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblWoreda_tblSubcity">
+    <End Role="tblSubcity" Type="Self.tblSubcity" Multiplicity="1" />
+    <End Role="tblWoreda" Type="Self.tblWoreda" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblSubcity">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblWoreda">
+        <PropertyRef Name="SubcityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="eEdirManagementSystemDBModelStoreContainer">
+    <EntitySet Name="tblMember" EntityType="Self.tblMember" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblMemberFamily" EntityType="Self.tblMemberFamily" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblMemberNotification" EntityType="Self.tblMemberNotification" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblMemberPayment" EntityType="Self.tblMemberPayment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblNotificationType" EntityType="Self.tblNotificationType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblPaymentPeriod" EntityType="Self.tblPaymentPeriod" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblRegion" EntityType="Self.tblRegion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblRelationType" EntityType="Self.tblRelationType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblSubcity" EntityType="Self.tblSubcity" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblWoreda" EntityType="Self.tblWoreda" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_tblMember_tblRegion" Association="Self.FK_tblMember_tblRegion">
+      <End Role="tblRegion" EntitySet="tblRegion" />
+      <End Role="tblMember" EntitySet="tblMember" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblMember_tblSubcity" Association="Self.FK_tblMember_tblSubcity">
+      <End Role="tblSubcity" EntitySet="tblSubcity" />
+      <End Role="tblMember" EntitySet="tblMember" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblMember_tblWoreda" Association="Self.FK_tblMember_tblWoreda">
+      <End Role="tblWoreda" EntitySet="tblWoreda" />
+      <End Role="tblMember" EntitySet="tblMember" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblMemberFamily_tblMember" Association="Self.FK_tblMemberFamily_tblMember">
+      <End Role="tblMember" EntitySet="tblMember" />
+      <End Role="tblMemberFamily" EntitySet="tblMemberFamily" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblMemberFamily_tblRegion" Association="Self.FK_tblMemberFamily_tblRegion">
+      <End Role="tblRegion" EntitySet="tblRegion" />
+      <End Role="tblMemberFamily" EntitySet="tblMemberFamily" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblMemberFamily_tblRelationType" Association="Self.FK_tblMemberFamily_tblRelationType">
+      <End Role="tblRelationType" EntitySet="tblRelationType" />
+      <End Role="tblMemberFamily" EntitySet="tblMemberFamily" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblMemberFamily_tblSubcity" Association="Self.FK_tblMemberFamily_tblSubcity">
+      <End Role="tblSubcity" EntitySet="tblSubcity" />
+      <End Role="tblMemberFamily" EntitySet="tblMemberFamily" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblMemberFamily_tblWoreda" Association="Self.FK_tblMemberFamily_tblWoreda">
+      <End Role="tblWoreda" EntitySet="tblWoreda" />
+      <End Role="tblMemberFamily" EntitySet="tblMemberFamily" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblMemberNotification_tblMember" Association="Self.FK_tblMemberNotification_tblMember">
+      <End Role="tblMember" EntitySet="tblMember" />
+      <End Role="tblMemberNotification" EntitySet="tblMemberNotification" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblMemberPayment_tblMember" Association="Self.FK_tblMemberPayment_tblMember">
+      <End Role="tblMember" EntitySet="tblMember" />
+      <End Role="tblMemberPayment" EntitySet="tblMemberPayment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblMemberPayment_tblPaymentPeriod" Association="Self.FK_tblMemberPayment_tblPaymentPeriod">
+      <End Role="tblPaymentPeriod" EntitySet="tblPaymentPeriod" />
+      <End Role="tblMemberPayment" EntitySet="tblMemberPayment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblSubcity_tblRegion" Association="Self.FK_tblSubcity_tblRegion">
+      <End Role="tblRegion" EntitySet="tblRegion" />
+      <End Role="tblSubcity" EntitySet="tblSubcity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblWoreda_tblSubcity" Association="Self.FK_tblWoreda_tblSubcity">
+      <End Role="tblSubcity" EntitySet="tblSubcity" />
+      <End Role="tblWoreda" EntitySet="tblWoreda" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

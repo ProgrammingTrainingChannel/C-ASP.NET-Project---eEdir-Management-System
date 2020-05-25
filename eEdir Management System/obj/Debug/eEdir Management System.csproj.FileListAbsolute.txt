@@ -1,0 +1,66 @@
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\roslyn\csc.exe
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\roslyn\System.Collections.Immutable.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\roslyn\System.Reflection.Metadata.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\roslyn\vbc.exe
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\roslyn\VBCSCompiler.exe
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\roslyn\VBCSCompiler.exe.config
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\eEdir Management System.dll.config
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\eEdir Management System.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\eEdir Management System.pdb
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Antlr3.Runtime.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\AspNet.ScriptManager.bootstrap.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\AspNet.ScriptManager.jQuery.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\EntityFramework.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\EntityFramework.SqlServer.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.AspNet.FriendlyUrls.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.Owin.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.Owin.Security.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.Owin.Security.Google.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.ScriptManager.MSAjax.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.ScriptManager.WebForms.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.Web.Infrastructure.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Newtonsoft.Json.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Owin.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\System.Web.Optimization.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\System.Web.Providers.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\WebGrease.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\System.Web.Optimization.xml
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Antlr3.Runtime.pdb
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Newtonsoft.Json.xml
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\EntityFramework.xml
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\EntityFramework.SqlServer.xml
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\System.Web.Providers.xml
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.Owin.xml
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.Owin.Security.xml
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.Owin.Security.Google.xml
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\obj\Debug\eEdir Management System.csprojResolveAssemblyReference.cache
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\obj\Debug\eEdir Management System.dll
+E:\Programming Camp\Web Application Development Training Projects\eEdir Management System\eEdir Management System\obj\Debug\eEdir Management System.pdb

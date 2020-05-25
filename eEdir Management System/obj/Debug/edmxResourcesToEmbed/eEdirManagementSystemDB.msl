@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="eEdirManagementSystemDBModelStoreContainer" CdmEntityContainer="eEdirManagementSystemDBEntities">
+    <EntitySetMapping Name="tblMembers">
+      <EntityTypeMapping TypeName="eEdirManagementSystemDBModel.tblMember">
+        <MappingFragment StoreEntitySet="tblMember">
+          <ScalarProperty Name="MembershipDate" ColumnName="MembershipDate" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="HouseNumber" ColumnName="HouseNumber" />
+          <ScalarProperty Name="WoredaID" ColumnName="WoredaID" />
+          <ScalarProperty Name="SubcityID" ColumnName="SubcityID" />
+          <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+          <ScalarProperty Name="Fullname" ColumnName="Fullname" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMemberFamilies">
+      <EntityTypeMapping TypeName="eEdirManagementSystemDBModel.tblMemberFamily">
+        <MappingFragment StoreEntitySet="tblMemberFamily">
+          <ScalarProperty Name="RelationTypeID" ColumnName="RelationTypeID" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="HouseNumber" ColumnName="HouseNumber" />
+          <ScalarProperty Name="WoredaID" ColumnName="WoredaID" />
+          <ScalarProperty Name="SubcityID" ColumnName="SubcityID" />
+          <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+          <ScalarProperty Name="Fullname" ColumnName="Fullname" />
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMemberNotifications">
+      <EntityTypeMapping TypeName="eEdirManagementSystemDBModel.tblMemberNotification">
+        <MappingFragment StoreEntitySet="tblMemberNotification">
+          <ScalarProperty Name="NotificationDate" ColumnName="NotificationDate" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="NotificationTypeID" ColumnName="NotificationTypeID" />
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblMemberPayments">
+      <EntityTypeMapping TypeName="eEdirManagementSystemDBModel.tblMemberPayment">
+        <MappingFragment StoreEntitySet="tblMemberPayment">
+          <ScalarProperty Name="PaymentTransactionCode" ColumnName="PaymentTransactionCode" />
+          <ScalarProperty Name="PaymentAmount" ColumnName="PaymentAmount" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+          <ScalarProperty Name="PaymentYear" ColumnName="PaymentYear" />
+          <ScalarProperty Name="PaymentPeriodID" ColumnName="PaymentPeriodID" />
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblNotificationTypes">
+      <EntityTypeMapping TypeName="eEdirManagementSystemDBModel.tblNotificationType">
+        <MappingFragment StoreEntitySet="tblNotificationType">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPaymentPeriods">
+      <EntityTypeMapping TypeName="eEdirManagementSystemDBModel.tblPaymentPeriod">
+        <MappingFragment StoreEntitySet="tblPaymentPeriod">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblRegions">
+      <EntityTypeMapping TypeName="eEdirManagementSystemDBModel.tblRegion">
+        <MappingFragment StoreEntitySet="tblRegion">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblRelationTypes">
+      <EntityTypeMapping TypeName="eEdirManagementSystemDBModel.tblRelationType">
+        <MappingFragment StoreEntitySet="tblRelationType">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSubcities">
+      <EntityTypeMapping TypeName="eEdirManagementSystemDBModel.tblSubcity">
+        <MappingFragment StoreEntitySet="tblSubcity">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblWoredas">
+      <EntityTypeMapping TypeName="eEdirManagementSystemDBModel.tblWoreda">
+        <MappingFragment StoreEntitySet="tblWoreda">
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SubcityID" ColumnName="SubcityID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
